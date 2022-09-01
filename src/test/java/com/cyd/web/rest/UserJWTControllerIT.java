@@ -10,8 +10,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.cyd.IntegrationTest;
-import com.cyd.domain.User;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.UserRepository;
 import com.cyd.web.rest.vm.LoginVM;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

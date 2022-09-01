@@ -1,6 +1,6 @@
 package com.cyd.service;
 
-import com.cyd.domain.User;
+import com.cyd.primary.domain.User;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import javax.mail.MessagingException;

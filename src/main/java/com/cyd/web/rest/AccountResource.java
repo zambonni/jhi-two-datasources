@@ -1,7 +1,9 @@
 package com.cyd.web.rest;
 
-import com.cyd.domain.User;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.UserRepository;
+import com.cyd.secondary.domain.UserFoo;
+import com.cyd.secondary.repository.UserFooRepository;
 import com.cyd.security.SecurityUtils;
 import com.cyd.service.MailService;
 import com.cyd.service.UserService;
@@ -41,10 +43,13 @@ public class AccountResource {
 
     private final MailService mailService;
 
-    public AccountResource(UserRepository userRepository, UserService userService, MailService mailService) {
+    private final UserFooRepository userFooRepository;
+
+    public AccountResource(UserRepository userRepository, UserService userService, MailService mailService, UserFooRepository userFooRepository) {
         this.userRepository = userRepository;
         this.userService = userService;
         this.mailService = mailService;
+        this.userFooRepository = userFooRepository;
     }
 
     /**
@@ -63,6 +68,15 @@ public class AccountResource {
         }
         User user = userService.registerUser(managedUserVM, managedUserVM.getPassword());
         mailService.sendActivationEmail(user);
+    }
+
+    @GetMapping("/register2")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void registerAccount2() {
+        UserFoo uf = new UserFoo();
+        uf.setLogin("sdfgfdsasdf11111111");
+//        uf.setCreatedBy("sdfgdsdfgf");
+        userFooRepository.saveAndFlush(uf);
     }
 
     /**

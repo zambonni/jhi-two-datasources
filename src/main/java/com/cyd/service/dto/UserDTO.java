@@ -1,6 +1,6 @@
 package com.cyd.service.dto;
 
-import com.cyd.domain.User;
+import com.cyd.primary.domain.User;
 
 /**
  * A DTO representing a user, with only the public attributes.

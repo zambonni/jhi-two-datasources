@@ -1,10 +1,10 @@
 package com.cyd.service;
 
 import com.cyd.config.Constants;
-import com.cyd.domain.Authority;
-import com.cyd.domain.User;
-import com.cyd.repository.AuthorityRepository;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.Authority;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.AuthorityRepository;
+import com.cyd.primary.repository.UserRepository;
 import com.cyd.security.AuthoritiesConstants;
 import com.cyd.security.SecurityUtils;
 import com.cyd.service.dto.AdminUserDTO;
@@ -117,6 +117,7 @@ public class UserService {
         Set<Authority> authorities = new HashSet<>();
         authorityRepository.findById(AuthoritiesConstants.USER).ifPresent(authorities::add);
         newUser.setAuthorities(authorities);
+        newUser.setCreatedBy("ekekekekeke");
         userRepository.save(newUser);
         log.debug("Created Information for User: {}", newUser);
         return newUser;

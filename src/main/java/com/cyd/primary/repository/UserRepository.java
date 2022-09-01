@@ -1,6 +1,6 @@
-package com.cyd.repository;
+package com.cyd.primary.repository;
 
-import com.cyd.domain.User;
+import com.cyd.primary.domain.User;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;

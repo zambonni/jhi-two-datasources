@@ -1,8 +1,8 @@
 package com.cyd.security;
 
-import com.cyd.domain.Authority;
-import com.cyd.domain.User;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.Authority;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.UserRepository;
 import java.util.*;
 import java.util.stream.Collectors;
 import org.hibernate.validator.internal.constraintvalidators.hv.EmailValidator;

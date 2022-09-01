@@ -1,4 +1,4 @@
-package com.cyd.domain;
+package com.cyd.primary.domain;
 
 import java.io.Serializable;
 import java.util.Objects;

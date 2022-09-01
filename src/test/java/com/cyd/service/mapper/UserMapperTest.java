@@ -2,7 +2,7 @@ package com.cyd.service.mapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.cyd.domain.User;
+import com.cyd.primary.domain.User;
 import com.cyd.service.dto.AdminUserDTO;
 import com.cyd.service.dto.UserDTO;
 import java.util.ArrayList;

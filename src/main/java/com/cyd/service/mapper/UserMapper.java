@@ -1,7 +1,7 @@
 package com.cyd.service.mapper;
 
-import com.cyd.domain.Authority;
-import com.cyd.domain.User;
+import com.cyd.primary.domain.Authority;
+import com.cyd.primary.domain.User;
 import com.cyd.service.dto.AdminUserDTO;
 import com.cyd.service.dto.UserDTO;
 import java.util.*;

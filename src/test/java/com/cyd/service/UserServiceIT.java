@@ -4,10 +4,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 import com.cyd.IntegrationTest;
-import com.cyd.config.Constants;
-import com.cyd.domain.User;
-import com.cyd.repository.UserRepository;
-import com.cyd.service.dto.AdminUserDTO;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.UserRepository;
+
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -20,8 +19,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.data.auditing.AuditingHandler;
 import org.springframework.data.auditing.DateTimeProvider;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.transaction.annotation.Transactional;
 import tech.jhipster.security.RandomUtil;
 

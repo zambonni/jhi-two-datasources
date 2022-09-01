@@ -6,9 +6,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.cyd.IntegrationTest;
-import com.cyd.domain.Authority;
-import com.cyd.domain.User;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.Authority;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.UserRepository;
 import com.cyd.security.AuthoritiesConstants;
 import com.cyd.service.dto.AdminUserDTO;
 import com.cyd.service.mapper.UserMapper;

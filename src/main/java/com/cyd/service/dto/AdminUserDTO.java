@@ -1,8 +1,8 @@
 package com.cyd.service.dto;
 
 import com.cyd.config.Constants;
-import com.cyd.domain.Authority;
-import com.cyd.domain.User;
+import com.cyd.primary.domain.Authority;
+import com.cyd.primary.domain.User;
 import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Collectors;

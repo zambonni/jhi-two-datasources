@@ -1,8 +1,8 @@
 package com.cyd.web.rest;
 
 import com.cyd.config.Constants;
-import com.cyd.domain.User;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.UserRepository;
 import com.cyd.security.AuthoritiesConstants;
 import com.cyd.service.MailService;
 import com.cyd.service.UserService;

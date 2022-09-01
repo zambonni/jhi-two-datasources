@@ -1,4 +1,4 @@
 /**
  * Spring Data JPA repositories.
  */
-package com.cyd.repository;
+package com.cyd.primary.repository;

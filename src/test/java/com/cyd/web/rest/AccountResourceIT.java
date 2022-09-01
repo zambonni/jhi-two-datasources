@@ -7,14 +7,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.cyd.IntegrationTest;
 import com.cyd.config.Constants;
-import com.cyd.domain.User;
-import com.cyd.repository.AuthorityRepository;
-import com.cyd.repository.UserRepository;
+import com.cyd.primary.domain.User;
+import com.cyd.primary.repository.AuthorityRepository;
+import com.cyd.primary.repository.UserRepository;
 import com.cyd.security.AuthoritiesConstants;
 import com.cyd.service.UserService;
 import com.cyd.service.dto.AdminUserDTO;
 import com.cyd.service.dto.PasswordChangeDTO;
-import com.cyd.service.dto.UserDTO;
 import com.cyd.web.rest.vm.KeyAndPasswordVM;
 import com.cyd.web.rest.vm.ManagedUserVM;
 import java.time.Instant;

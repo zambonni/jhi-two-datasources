@@ -1,4 +1,4 @@
-package com.cyd.domain;
+package com.cyd.primary.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;

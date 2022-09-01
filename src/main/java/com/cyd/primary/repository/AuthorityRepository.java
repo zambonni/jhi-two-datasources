@@ -1,6 +1,6 @@
-package com.cyd.repository;
+package com.cyd.primary.repository;
 
-import com.cyd.domain.Authority;
+import com.cyd.primary.domain.Authority;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

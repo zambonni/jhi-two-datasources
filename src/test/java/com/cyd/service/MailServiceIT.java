@@ -6,7 +6,7 @@ import static org.mockito.Mockito.*;
 
 import com.cyd.IntegrationTest;
 import com.cyd.config.Constants;
-import com.cyd.domain.User;
+import com.cyd.primary.domain.User;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;

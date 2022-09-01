@@ -1,4 +1,4 @@
-package com.cyd.domain;
+package com.cyd.primary.domain;
 
 import com.cyd.config.Constants;
 import com.fasterxml.jackson.annotation.JsonIgnore;
