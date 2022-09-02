@@ -17,7 +17,7 @@ import org.springframework.core.env.Profiles;
 import tech.jhipster.config.JHipsterConstants;
 import tech.jhipster.config.liquibase.SpringLiquibaseUtil;
 
-@Configuration
+//@Configuration
 public class LiquibaseConfiguration {
 
     private final Logger log = LoggerFactory.getLogger(LiquibaseConfiguration.class);
